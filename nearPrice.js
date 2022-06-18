@@ -1,9 +1,9 @@
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://api.coingecko.com/api/v3/coins/near/market_chart?vs_currency=usd&days=1&interval=daily',
+  'url': 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=near&order=market_cap_desc&per_page=1&page=1&sparkline=false&price_change_percentage=24h\n',
   'headers': {
-    'Cookie': 'datadome=u_ZeWd55-WmQFSXo2g-rRZcQiIlCCspU.gjU5wjR6BlN3o6K-eX3PGm8hkasyfmOL-MrObz4Eia0SEnHYW0FN8LxME1._mmuQG4bTutcJQC38kPIo7HDKowkwaZHd67'
+    'Cookie': 'datadome=Kp~Tg5AvvW9TdiqC8qOwNscyb6hFNiiWrfdKtgvp.REQ8tKA7F6fvBNycfkf03mUp2qVrAfCRySu2dIOTsYgHexbd0zPDyvJs-uAIM4dxT-a15gpVMTDl9E.HSQAGgN'
   }
 };
 request(options, function (error, response) {
