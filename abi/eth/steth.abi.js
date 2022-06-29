@@ -18,7 +18,7 @@ const stethContractABI = [
     payable: false,
     stateMutability: "view",
     type: "function",
-  }
+  },
 ];
 
 export default stethContractABI;
