@@ -23,120 +23,84 @@ request(options, function (error, response) {
           i + 1
         }, ${tokenPrice[i].current_price}, "${tokenPrice[i].last_updated}");`
       );
-      console.log(
-        `${tokenPrice[i].id} statusCode:`,
-        response && response.statusCode
-      );
+      console.log(response && response.statusCode);
     } else if (tokenPrice[1].id === "solana") {
       connection.query(
         `INSERT INTO token_price (name_id, price, last_updated) VALUES (${
           i + 1
         }, ${tokenPrice[i].current_price}, "${tokenPrice[i].last_updated}");`
       );
-      console.log(
-        `${tokenPrice[i].id} statusCode:`,
-        response && response.statusCode
-      );
+      console.log(response && response.statusCode);
     } else if (tokenPrice[2].id === "staked-ether") {
       connection.query(
         `INSERT INTO token_price (name_id, price, last_updated) VALUES (${
           i + 1
         }, ${tokenPrice[i].current_price}, "${tokenPrice[i].last_updated}");`
       );
-      console.log(
-        `${tokenPrice[i].id} statusCode:`,
-        response && response.statusCode
-      );
+      console.log(response && response.statusCode);
     } else if (tokenPrice[3].id === "matic-network") {
       connection.query(
         `INSERT INTO token_price (name_id, price, last_updated) VALUES (${
           i + 1
         }, ${tokenPrice[i].current_price}, "${tokenPrice[i].last_updated}");`
       );
-      console.log(
-        `${tokenPrice[i].id} statusCode:`,
-        response && response.statusCode
-      );
+      console.log(response && response.statusCode);
     } else if (tokenPrice[4].id === "near") {
       connection.query(
         `INSERT INTO token_price (name_id, price, last_updated) VALUES (${
           i + 1
         }, ${tokenPrice[i].current_price}, "${tokenPrice[i].last_updated}");`
       );
-      console.log(
-        `${tokenPrice[i].id} statusCode:`,
-        response && response.statusCode
-      );
+      console.log(response && response.statusCode);
     } else if (tokenPrice[5].id === "cosmos") {
       connection.query(
         `INSERT INTO token_price (name_id, price, last_updated) VALUES (${
           i + 1
         }, ${tokenPrice[i].current_price}, "${tokenPrice[i].last_updated}");`
       );
-      console.log(
-        `${tokenPrice[i].id} statusCode:`,
-        response && response.statusCode
-      );
+      console.log(response && response.statusCode);
     } else if (tokenPrice[6].id === "the-graph") {
       connection.query(
         `INSERT INTO token_price (name_id, price, last_updated) VALUES (${
           i + 1
         }, ${tokenPrice[i].current_price}, "${tokenPrice[i].last_updated}");`
       );
-      console.log(
-        `${tokenPrice[i].id} statusCode:`,
-        response && response.statusCode
-      );
+      console.log(response && response.statusCode);
     } else if (tokenPrice[7].id === "celo") {
       connection.query(
         `INSERT INTO token_price (name_id, price, last_updated) VALUES (8${
           i + 1
         }, ${tokenPrice[i].current_price}, "${tokenPrice[i].last_updated}");`
       );
-      console.log(
-        `${tokenPrice[i].id} statusCode:`,
-        response && response.statusCode
-      );
+      console.log(response && response.statusCode);
     } else if (tokenPrice[8].id === "mina-protocol") {
       connection.query(
         `INSERT INTO token_price (name_id, price, last_updated) VALUES (${
           i + 1
         }, ${tokenPrice[i].current_price}, "${tokenPrice[i].last_updated}");`
       );
-      console.log(
-        `${tokenPrice[i].id} statusCode:`,
-        response && response.statusCode
-      );
+      console.log(response && response.statusCode);
     } else if (tokenPrice[9].id === "osmosis") {
       connection.query(
         `INSERT INTO token_price (name_id, price, last_updated) VALUES (${
           i + 1
         }, ${tokenPrice[i].current_price}, "${tokenPrice[i9].last_updated}");`
       );
-      console.log(
-        `${tokenPrice[i].id} statusCode:`,
-        response && response.statusCode
-      );
+      console.log(response && response.statusCode);
     } else if (tokenPrice[10].id === "persistence") {
       connection.query(
         `INSERT INTO token_price (name_id, price, last_updated) VALUES (${
           i + 1
         }, ${tokenPrice[i].current_price}, "${tokenPrice[i].last_updated}");`
       );
-      console.log(
-        `${tokenPrice[i].id} statusCode:`,
-        response && response.statusCode
-      );
+      console.log(response && response.statusCode);
     } else if (tokenPrice[11].id === "certik") {
       connection.query(
         `INSERT INTO token_price (name_id, price, last_updated) VALUES (${
           i + 1
         }, ${tokenPrice[i].current_price}, "${tokenPrice[i].last_updated}");`
       );
-      console.log(
-        `${tokenPrice[i].id} statusCode:`,
-        response && response.statusCode
-      );
+      console.log(response && response.statusCode);
     } else {
       throw new Error("Not Found");
     }

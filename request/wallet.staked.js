@@ -22,11 +22,10 @@ const near = await connect(config);
 const etherAccount = "0x0000000000000000000000000000000000000000";
 const lidoContractAddress = "0x55032650b14df07b85bF18A3a3eC8E0Af2e028d5";
 const nearAccount = "dsrvlabs.poolv1.near";
-
-//ethereum
 const myContract = new Contract(stethContractABI, lidoContractAddress, {
   from: etherAccount,
 });
+
 const etherStaked = async () => {
   try {
     const ethNodeInfo = await myContract.methods
@@ -41,7 +40,6 @@ const etherStaked = async () => {
   }
 };
 
-//near
 const nearStaked = async () => {
   try {
     const nearNodeInfo = await near.connection.provider.query({
@@ -51,7 +49,7 @@ const nearStaked = async () => {
     });
     const staked = nearNodeInfo.locked.slice(0, 12) / 100000;
     connection.query(
-      `INSERT INTO wallet_staked (name_id, staked) VALUES (2, ${staked});`
+      `INSERT INTO wallet_staked (name_id, staked) VALUES (5, ${staked});`
     );
   } catch (error) {
     console.error(error);
